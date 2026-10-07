@@ -30,7 +30,7 @@ export const projects: Project[] = [
       'Daily price dashboard, trends, and a 5-day forecast',
       'Shopping cost simulation by commodity, region, and market type'
     ],
-    links: [{label: 'GitHub', href: '[ISI]'}],
+    links: [{label: 'GitHub', href: 'https://github.com/JosuaAdhiCandraN/product1.1'}],
     tone: 'mint',
     featured: true
   },
@@ -47,7 +47,7 @@ export const projects: Project[] = [
       'Authentication and expense tracking',
       'Visual dashboard of spending'
     ],
-    links: [{label: 'GitHub', href: '[ISI]'}],
+    links: [{label: 'GitHub', href: 'https://github.com/Drafaund/KosBudget'}],
     tone: 'pink',
     featured: true
   }
