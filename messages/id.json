@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Natanael Albert · Data, ML Time-Series & Web/API",
+    "description": "Portofolio Natanael Albert, lulusan Teknologi Informasi UGM yang fokus pada ETL, machine learning time-series, dan pengembangan web/API."
+  },
+  "nav": {
+    "main": "Navigasi utama", "menu": "Buka menu", "close": "Tutup menu",
+    "language": "Bahasa", "theme": "Ganti tema terang/gelap", "skip": "Lewati ke konten utama",
+    "home": "Beranda", "about": "Tentang", "projects": "Proyek",
+    "experience": "Pengalaman", "skills": "Keahlian", "contact": "Kontak"
+  },
+  "home": {
+    "hero": {
+      "greeting": "Halo, saya",
+      "role": "Lulusan Teknologi Informasi UGM · Data, ML Time-Series & Web/API",
+      "intro": "Saya suka mengubah data berantakan menjadi sesuatu yang berguna: pipeline ETL yang rapi, model prediksi time-series, dan aplikasi web yang terhubung lewat API. Siap bekerja penuh waktu di Kudus.",
+      "photoAlt": "Foto profil Natanael Albert",
+      "factLocation": "Kudus, Jawa Tengah",
+      "factReady": "Siap kerja penuh waktu",
+      "factGpa": "UGM · IPK 3,62"
+    },
+    "cta": {"projects": "Lihat proyek", "contact": "Hubungi saya", "cv": "Unduh CV"},
+    "focus": {
+      "title": "Yang saya kerjakan",
+      "etl": {"title": "Data & ETL", "text": "Membersihkan, mengeksplorasi, dan mengintegrasikan data dengan Python dan Pandas."},
+      "ml": {"title": "ML Time-Series", "text": "Model LSTM dan transfer learning untuk prediksi pada data yang terbatas."},
+      "web": {"title": "Web & API", "text": "Aplikasi dengan Next.js, ASP.NET, dan Laravel yang terintegrasi dengan database."}
+    },
+    "featured": {"title": "Proyek pilihan", "all": "Semua proyek"},
+    "contactCta": {
+      "title": "Mari ngobrol",
+      "text": "Sedang mencari rekan tim atau kandidat yang cepat belajar dan bertanggung jawab? Saya senang berdiskusi.",
+      "button": "Ke halaman kontak"
+    }
+  },
+  "about": {
+    "title": "Tentang saya",
+    "subtitle": "Sedikit cerita tentang latar belakang dan perjalanan saya.",
+    "summaryTitle": "Profil",
+    "educationTitle": "Pendidikan",
+    "achievementsTitle": "Prestasi"
+  },
+  "projects": {
+    "title": "Proyek",
+    "subtitle": "Beberapa hal yang pernah saya bangun dan teliti.",
+    "viewDetail": "Lihat detail",
+    "back": "Kembali ke semua proyek",
+    "highlights": "Sorotan",
+    "stack": "Teknologi",
+    "links": "Tautan"
+  },
+  "experience": {
+    "title": "Pengalaman",
+    "subtitle": "Kerja praktik, mengajar, dan berorganisasi.",
+    "internship": "Kerja praktik",
+    "teaching": "Asisten praktikum",
+    "organization": "Organisasi"
+  },
+  "skills": {
+    "title": "Keahlian",
+    "subtitle": "Perangkat yang saya gunakan sehari-hari.",
+    "certsTitle": "Sertifikasi"
+  },
+  "contact": {
+    "title": "Kontak",
+    "subtitle": "Terbuka untuk peluang kerja penuh waktu dan diskusi profesional.",
+    "email": "Email", "phone": "Telepon", "linkedin": "LinkedIn", "github": "GitHub",
+    "location": "Lokasi", "locationValue": "Kudus, Jawa Tengah",
+    "cvTitle": "Unduh CV", "cvId": "CV (Bahasa Indonesia)", "cvEn": "CV (English)"
+  },
+  "footer": {"rights": "© {year} Natanael Albert.", "built": "Dibuat dengan Next.js dan Tailwind CSS."}
+}

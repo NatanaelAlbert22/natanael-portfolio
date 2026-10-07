@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Natanael Albert · Data, Time-Series ML & Web/API",
+    "description": "Portfolio of Natanael Albert, an Information Technology graduate from UGM focused on ETL, time-series machine learning, and web/API development."
+  },
+  "nav": {
+    "main": "Main navigation", "menu": "Open menu", "close": "Close menu",
+    "language": "Language", "theme": "Toggle light/dark theme", "skip": "Skip to main content",
+    "home": "Home", "about": "About", "projects": "Projects",
+    "experience": "Experience", "skills": "Skills", "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "greeting": "Hi, I'm",
+      "role": "Information Technology graduate (UGM) · Data, Time-Series ML & Web/API",
+      "intro": "I like turning messy data into something useful: tidy ETL pipelines, time-series prediction models, and web apps connected through APIs. Available for full-time work in Kudus.",
+      "photoAlt": "Profile photo of Natanael Albert",
+      "factLocation": "Kudus, Central Java",
+      "factReady": "Available full-time",
+      "factGpa": "UGM · GPA 3.62"
+    },
+    "cta": {"projects": "View projects", "contact": "Get in touch", "cv": "Download CV"},
+    "focus": {
+      "title": "What I work on",
+      "etl": {"title": "Data & ETL", "text": "Cleaning, exploring, and integrating data with Python and Pandas."},
+      "ml": {"title": "Time-Series ML", "text": "LSTM models and transfer learning for prediction on limited data."},
+      "web": {"title": "Web & API", "text": "Apps built with Next.js, ASP.NET, and Laravel, wired up to real databases."}
+    },
+    "featured": {"title": "Featured projects", "all": "All projects"},
+    "contactCta": {
+      "title": "Let's talk",
+      "text": "Looking for a teammate who learns fast and owns their work? I'd love to chat.",
+      "button": "Go to contact page"
+    }
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": "A short story about my background and journey.",
+    "summaryTitle": "Profile",
+    "educationTitle": "Education",
+    "achievementsTitle": "Achievements"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "A few things I've built and researched.",
+    "viewDetail": "View details",
+    "back": "Back to all projects",
+    "highlights": "Highlights",
+    "stack": "Tech stack",
+    "links": "Links"
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "Internship, teaching, and organizations.",
+    "internship": "Internship",
+    "teaching": "Teaching assistant",
+    "organization": "Organizations"
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "The toolkit I use day to day.",
+    "certsTitle": "Certifications"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Open to full-time opportunities and professional conversations.",
+    "email": "Email", "phone": "Phone", "linkedin": "LinkedIn", "github": "GitHub",
+    "location": "Location", "locationValue": "Kudus, Central Java, Indonesia",
+    "cvTitle": "Download CV", "cvId": "CV (Bahasa Indonesia)", "cvEn": "CV (English)"
+  },
+  "footer": {"rights": "© {year} Natanael Albert.", "built": "Built with Next.js and Tailwind CSS."}
+}

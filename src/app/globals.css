@@ -1,26 +1,83 @@
 @import "tailwindcss";
 
+/* Dark mode lewat class "dark" (diatur oleh next-themes) */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #FFFBF7;
+  --surface: #FFFFFF;
+  --text: #2B2540;
+  --muted: #5B5473;
+  --line: #ECE4F5;
+  --pink: #FFD6E7;
+  --mint: #CFF3E4;
+  --lav: #E3D9FF;
+  --sun: #FFF1B8;
+  --accent: #6D4AFF;
+  --accent-fg: #FFFFFF;
+}
+
+.dark {
+  --bg: #171321;
+  --surface: #231E31;
+  --text: #F3EEFB;
+  --muted: #B9B0CE;
+  --line: #3A3350;
+  --pink: #5A2D45;
+  --mint: #1F4A3C;
+  --lav: #3F3466;
+  --sun: #5A4B1A;
+  --accent: #B8A2FF;
+  --accent-fg: #171321;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-pink: var(--pink);
+  --color-mint: var(--mint);
+  --color-lav: var(--lav);
+  --color-sun: var(--sun);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --font-display: var(--font-fredoka), ui-rounded, system-ui, sans-serif;
+  --font-sans: var(--font-jakarta), system-ui, sans-serif;
+  --shadow-soft: 0 10px 30px -12px rgb(80 60 140 / 0.28);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html { scroll-behavior: smooth; }
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 0.5rem;
+}
+
+.skip-link {
+  position: absolute; left: 1rem; top: -4rem; z-index: 100;
+  background: var(--accent); color: var(--accent-fg);
+  padding: 0.5rem 1rem; border-radius: 9999px; transition: top 0.2s;
+}
+.skip-link:focus { top: 1rem; }
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition duration-200 hover:-translate-y-0.5;
   }
+  .btn-primary { @apply bg-accent text-accent-fg shadow-soft hover:brightness-110; }
+  .btn-ghost { @apply border border-line bg-surface text-text hover:bg-lav; }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Animasi fade-in saat scroll */
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.is-visible { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .btn { transition: none; }
+  .btn:hover { transform: none; }
 }
