@@ -2,6 +2,45 @@ import type {Project} from '../types';
 
 export const projects: Project[] = [
   {
+    slug: 'ecommerce-customer-retention-analysis',
+    title: 'E-commerce Customer Retention Analysis',
+    tagline: 'Solo project · SQL and BI dashboard analysis for e-commerce customer retention',
+    summary:
+      'An online marketplace\'s management team wanted to know why revenue growth was slowing down and which customers were worth retaining. Built an advanced SQL pipeline over 98,000 transactions to map revenue trends, customer retention, and RFM segmentation, then surfaced it through an interactive dashboard for non-technical stakeholders.',
+    stack: ['Python', 'SQL', 'DuckDB', 'Tableau'],
+    highlights: [
+      'Identified that revenue plateaued for 8 consecutive months in 2018 rather than declining — surfaced through CTEs and window functions on monthly data',
+      'Built cohort retention analysis and RFM segmentation across nearly 95,000 unique customers',
+      'Discovered and fixed a bias in the RFM frequency score that had misclassified 37% of customers as "Loyal Customer"'
+    ],
+    links: [
+      {label: 'GitHub', href: 'https://github.com/NatanaelAlbert22/ecommerce-customer-retention-analysis'}
+      // {label: 'Dashboard', href: 'https://public.tableau.com/...'}
+    ],
+    tone: 'mint',
+    image: '/images/projects/ecommerce-customer-retention-analysis.jpg',   // remove this line if no image yet
+    featured: false
+  },
+  {
+    slug: 'feature-ab-test-funnel-analysis',
+    title: 'Feature A/B Test & Funnel Analysis',
+    tagline: 'Solo project · Statistical experiment for mobile game feature testing',
+    summary:
+      'A mobile game\'s product team was considering moving the first progression gate from level 30 to level 40, but didn\'t know its impact on player retention. Designed and ran a full A/B test over 90,000 users, from power analysis through multiple-testing correction, to deliver a statistically sound go/no-go recommendation.',
+    stack: ['Python', 'SciPy', 'Statsmodels', 'Plotly'],
+    highlights: [
+      'Ran power analysis, proportion z-tests, bootstrap confidence intervals, and FDR correction across two retention metrics',
+      'Found Day-7 retention dropped significantly by 0.83 percentage points in the treatment group (p=0.0026 after correction)',
+      'Validated the study was well-powered (89.2%) so the non-significant result could be trusted as a true null, not insufficient data'
+    ],
+    links: [
+      {label: 'GitHub', href: 'https://github.com/NatanaelAlbert22/feature-ab-test-funnel-analysis'}
+    ],
+    tone: 'lavender',
+    image: '/images/projects/feature-ab-test-funnel-analysis.jpg',   // remove this line if no image yet
+    featured: false
+  },
+  {
     slug: 'prediksi-kualitas-udara',
     title: 'Transfer Learning for Air Quality and Climate Prediction',
     tagline: 'B.Sc. thesis, Information Technology, UGM, 2025–2026',
