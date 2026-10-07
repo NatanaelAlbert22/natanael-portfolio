@@ -31,7 +31,7 @@ export default async function SkillsPage({params}: Props) {
                 <h2 className="font-display text-xl">{g.title}</h2>
                 <ul className="mt-4 flex flex-wrap gap-2">
                   {g.items.map((item) => (
-                    <li key={item}><Badge tone="sun">{item}</Badge></li>
+                    <li key={item}><Badge tone={g.tone} strong>{item}</Badge></li>
                   ))}
                 </ul>
               </Card>
